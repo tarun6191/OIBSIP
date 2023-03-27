@@ -1,0 +1,314 @@
+*{
+    padding:0;
+    margin: 0;
+   /* margin-top: 5px;
+    margin-left: 2px;*/
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial',sans-serif;
+    background: #000;
+    color: #999;
+}
+ul{
+    list-style: none;
+}
+.title-main img{
+    width:150px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40%,-50%);
+} 
+h1,h2,h3,h4{
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+margin: 8px 0;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.6);
+    box-shadow: inset 70px 70px 140px #000000,
+    inset -70px -70px 140px #000000;
+}
+.title{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('images/bg.jpg') no-repeat center center/cover;
+}
+.title .title-main{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+.title-main a{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+.title-mid{
+    position: relative;
+    z-index: 2;
+    margin: 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+.title-mid h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px ;
+    margin: 0 30px;
+    max-width: 800px;
+}
+.title-mid h3{
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 25px;
+}
+.title-mid p{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+.title-mid input{
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+    width: 445px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.title .btn{
+    display:inline-block ;
+    background: #e50914;
+    color:#fff;
+    padding: 6px 22px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+    outline: none;
+    box-shadow: 0 5px 2px rgba(0,0,0,0.45);
+    border-radius: 2px;
+}
+.btn :hover{
+    opacity : 0.9;
+}
+.btn-one{
+    border-radius: 4px;
+}
+.title-mid  .btn-two{
+    font-size: 24px;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    bottom: -8vh;
+    height: 50px;
+    width: 14rem;
+    
+}
+.card-1, .card-2, .card-3, .card-4{
+    border-top: 10px grey solid;
+    padding-top: 50px;
+}
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.cont-1{
+    padding-left: 80px;
+}
+.cards h1{
+    font-size: 48px;
+    padding: 16px;
+    padding-left: 0px;
+}
+.cards h3{
+    font-size: 25px;
+    line-height: 35px;
+}
+.card-1 img{
+    margin-left: 50px;
+    width: 90%;
+    height: 100%;
+}
+.card-1 video{
+    position: relative;
+    width: 100%;
+    height: 62%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card-2 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.cont-2{
+    padding-left: 100px;
+}
+.card-2 img{
+    width: 95%;
+    height: 95%;
+}
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.cont-3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+.card-3 img{
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 100%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card-3 video{
+    position: relative;
+    top: -47px;
+    left: 105px;
+    width: 70%;
+    height: 37%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.card-4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.cont-4{
+    padding-left: 150px;
+}
+.card-4 img{
+    width: 97%;
+    height: 100%;
+    margin-left: 100px;
+}
+.faq{
+    border-top: 8px grey solid;
+    text-align: center;
+    padding-top: 50px;
+}
+.faq h1{
+    padding-bottom: 40px;
+    font-size: 55px;
+    font-weight: 300;
+}
+.Que{
+    flex-direction: column;
+    display: flex;
+    flex-basis: 40%;
+    align-items: center;
+}
+.faq p{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    padding-top: 30px;
+    padding-bottom: 2px;
+}
+.faq li{
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 25px;
+    background-color: #303030;
+    color: white;
+    text-align: left;
+    width: 60%;
+}
+.faq .input{
+     display: inline-grid;
+     align-items: center;
+     grid-template-columns: 50% 40%;
+
+}
+.input input{
+    width: 600px;
+    height: 50px;
+    margin-left:245px;
+}
+.input .btn{
+   height: 3.25rem;
+   width: 250px;
+ /*  left: 20px;*/
+   background-color: #e50914;
+   color: #ffff;
+   font-size: 20px; 
+   padding: 15px 32px;
+   border: none;
+   border-radius: 2px;
+   margin-left: 33px; 
+}
+.footer{
+   margin-top: 60px;
+    border-top: 8px grey solid;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 250px;
+    padding-bottom: 100px;
+}
+.footer , .footer a{
+    color: #999;
+    font-size: 16px;
+}
+.footer p{
+    margin-bottom: 35px;
+    padding-left: 30px;
+}
+
+.footer .column{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+}
+.footer li{
+    line-height: 2.4;
+}
